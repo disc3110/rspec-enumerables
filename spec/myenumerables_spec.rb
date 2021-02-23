@@ -1,5 +1,3 @@
-# rubocop:disable Metrics/BlockLength
-# frozen_string_literal: true
 
 require_relative '../myenumerables_disc.rb'
 
@@ -237,4 +235,3 @@ describe Enumerable do
     end
   end
 end
-# rubocop:enable Metrics/BlockLength
