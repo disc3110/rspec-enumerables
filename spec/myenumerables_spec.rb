@@ -1,4 +1,3 @@
-
 require_relative '../myenumerables_disc.rb'
 
 describe Enumerable do
