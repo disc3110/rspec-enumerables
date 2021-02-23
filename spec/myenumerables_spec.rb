@@ -49,12 +49,12 @@ describe Enumerable do
   describe '#my_all?' do
     it "Passes each element of the collection to the given block.
     The method returns true if the block never returns false or nil." do
-      expect(integer_array.my_all?  { |x| x < 15 }).to be true
+      expect(integer_array.my_all? { |x| x < 15 }).to be true
     end
 
     it "Passes each element of the collection to the given block.
     The method returns false if the block returns a false or nil." do
-      expect(integer_array.my_all?  { |x| x > 15 }).to be false
+      expect(integer_array.my_all? { |x| x > 15 }).to be false
     end
 
     it 'if no block is given returns true when none of the collection members
@@ -97,13 +97,13 @@ describe Enumerable do
   describe '#my_any' do
     it "Passes each element of the collection to the given block.
     The method returns true if any of element the block returns a truthy." do
-      expect(integer_array.my_any?  { |x| x > 5 }).to be true
+      expect(integer_array.my_any? { |x| x > 5 }).to be true
     end
 
     it "Passes each element of the collection to the given block.
     The method returns false if the block returns always return
     false or nil" do
-      expect(integer_array.my_any?  { |x| x > 15 }).to be false
+      expect(integer_array.my_any? { |x| x > 15 }).to be false
     end
 
     it 'if no block is given returns false when all of the collection members
@@ -144,12 +144,12 @@ describe Enumerable do
   describe '#my_none' do
     it "Passes each element of the collection to the given block.
     The method returns true if the block always returns false or nil." do
-      expect(integer_array.my_none?  { |x| x > 15 }).to be true
+      expect(integer_array.my_none? { |x| x > 15 }).to be true
     end
 
     it "Passes each element of the collection to the given block.
     The method returns false if the block returns at least a truthy" do
-      expect(integer_array.my_none?  { |x| x > 5 }).to be false
+      expect(integer_array.my_none? { |x| x > 5 }).to be false
     end
 
     it 'if no block is given returns true when all of the collection members are
